@@ -1,5 +1,16 @@
 
-<div class="app" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Path - طريقك نحو مستقبل أفضل">
+  <title>Student Path | طريقك نحو مستقبل أفضل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
   <header class="topbar">
     <div class="brand">
       <div class="brand-mark">SP</div>
@@ -8,106 +19,196 @@
         <p data-ar="طريقك نحو مستقبل أفضل" data-en="Your path to a better future">طريقك نحو مستقبل أفضل</p>
       </div>
     </div>
-    <button id="languageToggle" class="language-btn">English</button>
+    <button id="languageToggle" type="button">English</button>
   </header>
 
   <div class="layout">
-    <aside class="sidebar">
-      <h3 data-ar="القائمة الرئيسية" data-en="Main Menu">القائمة الرئيسية</h3>
+    <nav class="sidebar" aria-label="التنقل الرئيسي">
       <button class="nav-btn active" data-target="home" data-ar="الرئيسية" data-en="Home">الرئيسية</button>
       <button class="nav-btn" data-target="plan" data-ar="خطة الدراسة" data-en="Study Plan">خطة الدراسة</button>
       <button class="nav-btn" data-target="scholarships" data-ar="المنح الدراسية" data-en="Scholarships">المنح الدراسية</button>
       <button class="nav-btn" data-target="exchange" data-ar="التبادل الثقافي" data-en="Cultural Exchange">التبادل الثقافي</button>
-      <button class="nav-btn" data-target="documents" data-ar="ملف التقديم" data-en="Application Documents">ملف التقديم</button>
+      <button class="nav-btn" data-target="documents" data-ar="تجهيز ملفك" data-en="Documents">تجهيز ملفك</button>
       <button class="nav-btn" data-target="english" data-ar="تعلم الإنجليزية" data-en="Learn English">تعلم الإنجليزية</button>
       <button class="nav-btn" data-target="math" data-ar="تعلم الرياضيات" data-en="Learn Mathematics">تعلم الرياضيات</button>
-      <button class="nav-btn" data-target="teachers" data-ar="مدرّسو الرياضيات" data-en="Math Teachers">مدرّسو الرياضيات</button>
+      <button class="nav-btn" data-target="teachers" data-ar="مدرسو الرياضيات" data-en="Math Teachers">مدرسو الرياضيات</button>
       <button class="nav-btn" data-target="courses" data-ar="الدورات والشهادات" data-en="Courses & Certificates">الدورات والشهادات</button>
       <button class="nav-btn" data-target="exams" data-ar="نماذج الاختبارات" data-en="Practice Exams">نماذج الاختبارات</button>
-      <button class="nav-btn" data-target="yemenExams" data-ar="اختبارات الثانوية اليمنية" data-en="Yemeni High School Exams">اختبارات الثانوية اليمنية</button>
-      <button class="nav-btn" data-target="askGroups" data-ar="مجموعات ASK التعليمية" data-en="ASK Educational Groups">مجموعات ASK التعليمية</button>
-      <button class="nav-btn" data-target="scholarshipGroups" data-ar="مجموعات نقاش المنح" data-en="Scholarship Discussion Groups">مجموعات نقاش المنح</button>
-      <button class="nav-btn" data-target="goals" data-ar="أهدافي وتقدمي" data-en="Goals & Progress">أهدافي وتقدمي</button>
+      <button class="nav-btn" data-target="yemenExams" data-ar="اختبارات الثانوية اليمنية" data-en="Yemen High School Exams">اختبارات الثانوية اليمنية</button>
+      <button class="nav-btn" data-target="askGroups" data-ar="مجموعات ASK التعليمية" data-en="ASK Study Groups">مجموعات ASK التعليمية</button>
+      <button class="nav-btn" data-target="scholarshipGroups" data-ar="قنوات المنح" data-en="Scholarship Communities">قنوات المنح</button>
+      <button class="nav-btn" data-target="goals" data-ar="أهدافي وتقدمي" data-en="My Goals & Progress">أهدافي وتقدمي</button>
       <button class="nav-btn" data-target="about" data-ar="عن الموقع" data-en="About">عن الموقع</button>
-    </aside>
+    </nav>
 
     <main class="content">
-      <section id="home" class="page active">
-        <div class="hero">
-          <span class="eyebrow">YOUR FUTURE STARTS HERE</span>
-          <h2 data-ar="أهلًا بك في طريق الطالب" data-en="Welcome to Student Path">أهلًا بك في طريق الطالب</h2>
-          <p data-ar="منصة تجمع الموارد التعليمية وفرص المنح وأدوات تنظيم الدراسة في مكان واحد، لتساعدك على الانتقال من الحلم إلى العمل."
-             data-en="A platform bringing learning resources, scholarship opportunities, and study tools together to help you turn dreams into action.">
-            منصة تجمع الموارد التعليمية وفرص المنح وأدوات تنظيم الدراسة في مكان واحد، لتساعدك على الانتقال من الحلم إلى العمل.
-          </p>
-          <button class="primary-btn" data-target="scholarships" data-ar="اكتشف فرص المنح" data-en="Explore Scholarships">اكتشف فرص المنح</button>
-          <button class="secondary-btn" data-target="plan" data-ar="ابدأ خطة دراستك" data-en="Start Your Study Plan">ابدأ خطة دراستك</button>
-        </div>
 
-        <div class="stats-grid">
-          <div class="stat-card"><strong>01</strong><span data-ar="تعلم وتطوير" data-en="Learn & Grow">تعلم وتطوير</span></div>
-          <div class="stat-card"><strong>02</strong><span data-ar="فرص ومنح" data-en="Opportunities">فرص ومنح</span></div>
-          <div class="stat-card"><strong>03</strong><span data-ar="تنظيم وتقدم" data-en="Plan & Progress">تنظيم وتقدم</span></div>
-        </div>
+      <section class="page active" id="home">
+        <h2 data-ar="أهلًا بك في Student Path" data-en="Welcome to Student Path">أهلًا بك في Student Path</h2>
+        <p data-ar="منصة تعليمية تساعدك على تنظيم دراستك، وتطوير مهاراتك، واكتشاف فرص المنح الدراسية." data-en="An educational platform to organize your studies, develop your skills, and discover scholarship opportunities.">منصة تعليمية تساعدك على تنظيم دراستك، وتطوير مهاراتك، واكتشاف فرص المنح الدراسية.</p>
 
-        <div class="panel">
-          <h3 data-ar="رسالة الموقع" data-en="Our Mission">رسالة الموقع</h3>
-          <p data-ar="قد لا تتوفر لكل طالب مصادر إرشاد كافية؛ لذلك يجمع طريق الطالب روابط مفيدة تساعدك في التعلم والاستعداد للاختبارات والبحث عن المنح وتنظيم أهدافك."
-             data-en="Not every student has access to enough guidance. Student Path gathers useful resources for learning, exam preparation, scholarship research, and goal setting.">
-            قد لا تتوفر لكل طالب مصادر إرشاد كافية؛ لذلك يجمع طريق الطالب روابط مفيدة تساعدك في التعلم والاستعداد للاختبارات والبحث عن المنح وتنظيم أهدافك.
-          </p>
-        </div>
-
-        <div class="panel founder-panel">
-          <h3 data-ar="مؤسس الموقع" data-en="Website Founder">مؤسس الموقع</h3>
-          <p class="founder">HASAN MUAAFA HASAN MUAAFA</p>
-          <p data-ar="مشروع طلابي لمشاركة الموارد والفرص التي قد تساعد الطلاب على بناء مستقبلهم."
-             data-en="A student project sharing resources and opportunities that can help students build their future.">
-            مشروع طلابي لمشاركة الموارد والفرص التي قد تساعد الطلاب على بناء مستقبلهم.
-          </p>
-          <a class="text-link" href="https://t.me/AL_AIN_FC_00" target="_blank" rel="noopener noreferrer">Telegram</a>
-        </div>
-
-        <div class="panel">
-          <h3 data-ar="تذكّر دائمًا" data-en="Remember">تذكّر دائمًا</h3>
-          <p data-ar="لا تحتاج إلى إنجاز كل شيء في يوم واحد. تعلّم شيئًا جديدًا، وأنجز خطوة صغيرة، ثم واصل غدًا."
-             data-en="You do not need to accomplish everything in one day. Learn something new, take one small step, and continue tomorrow.">
-            لا تحتاج إلى إنجاز كل شيء في يوم واحد. تعلّم شيئًا جديدًا، وأنجز خطوة صغيرة، ثم واصل غدًا.
-          </p>
+        <div class="card-grid">
+          <article class="card">
+            <h3 data-ar="خطط لدراستك" data-en="Plan Your Studies">خطط لدراستك</h3>
+            <p data-ar="نظّم مهامك وتابع تقدمك يومًا بعد يوم." data-en="Organize tasks and track your progress every day.">نظّم مهامك وتابع تقدمك يومًا بعد يوم.</p>
+            <button class="action-btn" data-target="plan" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</button>
+          </article>
+          <article class="card">
+            <h3 data-ar="اكتشف المنح" data-en="Explore Scholarships">اكتشف المنح</h3>
+            <p data-ar="تعرّف على فرص الدراسة والاستعداد للتقديم." data-en="Explore study opportunities and prepare your applications.">تعرّف على فرص الدراسة والاستعداد للتقديم.</p>
+            <button class="action-btn" data-target="scholarships" data-ar="استكشف الفرص" data-en="Explore Opportunities">استكشف الفرص</button>
+          </article>
+          <article class="card">
+            <h3 data-ar="طوّر مهاراتك" data-en="Develop Your Skills">طوّر مهاراتك</h3>
+            <p data-ar="ابدأ بتعلم الإنجليزية والرياضيات والبرمجة." data-en="Start learning English, mathematics, and programming.">ابدأ بتعلم الإنجليزية والرياضيات والبرمجة.</p>
+            <button class="action-btn" data-target="courses" data-ar="تصفح الدورات" data-en="Browse Courses">تصفح الدورات</button>
+          </article>
         </div>
       </section>
 
-      <section id="plan" class="page">
-        <h2 data-ar="خطة الدراسة" data-en="Study Plan">خطة الدراسة</h2>
-        <p data-ar="أنشئ قائمة بمهامك اليومية وتابع ما أنجزته."
-           data-en="Create a daily task list and track what you complete.">
-          أنشئ قائمة بمهامك اليومية وتابع ما أنجزته.
-        </p>
+      <section class="page" id="plan">
+        <h2 data-ar="خطة الدراسة والمهام" data-en="Study Plan & Tasks">خطة الدراسة والمهام</h2>
+        <p data-ar="أضف مهامك الدراسية، وحدد ما أنجزته." data-en="Add your study tasks and mark what you complete.">أضف مهامك الدراسية، وحدد ما أنجزته.</p>
+        <form id="taskForm">
+          <label for="taskInput" data-ar="مهمة جديدة" data-en="New task">مهمة جديدة</label>
+          <input id="taskInput" type="text" placeholder="مثال: مراجعة التفاضل" required>
+          <button type="submit" data-ar="إضافة المهمة" data-en="Add Task">إضافة المهمة</button>
+        </form>
+        <div class="progress-track"><div id="taskBar"></div></div>
+        <p id="taskCount">0 من 0 مهام مكتملة</p>
+        <p><span data-ar="نسبة الإنجاز:" data-en="Completion:">نسبة الإنجاز:</span> <strong id="taskPercent">0%</strong></p>
+        <ul id="taskList"></ul>
+        <button id="clearTasks" type="button" data-ar="حذف جميع المهام" data-en="Clear All Tasks">حذف جميع المهام</button>
+      </section>
 
-        <div class="panel">
-          <form id="taskForm">
-            <label for="taskInput" data-ar="المهمة الجديدة" data-en="New Task">المهمة الجديدة</label>
-            <input id="taskInput" type="text" required maxlength="160" placeholder="مثال: مراجعة التفاضل">
-            <button class="primary-btn" type="submit" data-ar="إضافة المهمة" data-en="Add Task">إضافة المهمة</button>
-          </form>
-          <div class="task-summary">
-            <span id="taskCount">0 مهام</span>
-            <span id="taskPercent">0%</span>
-          </div>
-          <div class="progress-track"><div id="taskBar" class="progress-bar"></div></div>
-          <ul id="taskList" class="task-list"></ul>
-          <button id="clearTasks" class="secondary-btn" type="button" data-ar="حذف جميع المهام" data-en="Clear All Tasks">حذف جميع المهام</button>
+      <section class="page" id="scholarships">
+        <h2 data-ar="المنح الدراسية" data-en="Scholarship Opportunities">المنح الدراسية</h2>
+        <p data-ar="ابدأ من المواقع الرسمية، وتحقق دائمًا من شروط الأهلية والمواعيد والتمويل." data-en="Start with official websites and verify eligibility, deadlines, and funding.">ابدأ من المواقع الرسمية، وتحقق دائمًا من شروط الأهلية والمواعيد والتمويل.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Stipendium Hungaricum</h3>
+            <p data-ar="المنحة الحكومية المجرية." data-en="Hungarian Government scholarship.">المنحة الحكومية المجرية.</p>
+            <a href="https://stipendiumhungaricum.hu/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a>
+          </article>
+          <article class="card">
+            <h3>Campus China</h3>
+            <p data-ar="معلومات المنح الدراسية في الصين." data-en="Information about scholarships in China.">معلومات المنح الدراسية في الصين.</p>
+            <a href="https://www.campuschina.org/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a>
+          </article>
+          <article class="card">
+            <h3>ScholarshipPortal</h3>
+            <p data-ar="ابحث عن فرص دراسية متنوعة." data-en="Search for different study opportunities.">ابحث عن فرص دراسية متنوعة.</p>
+            <a href="https://www.scholarshipportal.com/" target="_blank" rel="noopener noreferrer">استكشف الفرص</a>
+          </article>
         </div>
+      </section>
 
-        <div class="panel">
-          <h3 data-ar="ساعات الدراسة والراحة" data-en="Study Hours & Rest">ساعات الدراسة والراحة</h3>
-          <label for="studyHours" data-ar="ساعات الدراسة المنجزة هذا الأسبوع" data-en="Study hours completed this week">ساعات الدراسة المنجزة هذا الأسبوع</label>
-          <input id="studyHours" type="number" min="0" max="168" step="0.5" value="0">
-          <label for="weeklyGoal" data-ar="هدف الساعات الأسبوعي" data-en="Weekly study-hour goal">هدف الساعات الأسبوعي</label>
-          <input id="weeklyGoal" type="number" min="1" max="168" value="10">
-          <label for="restDay" data-ar="يوم الراحة الأسبوعي" data-en="Weekly rest day">يوم الراحة الأسبوعي</label>
+      <section class="page" id="exchange">
+        <h2 data-ar="التبادل الثقافي" data-en="Cultural Exchange">التبادل الثقافي</h2>
+        <p data-ar="تعرّف على برامج التبادل الثقافي، وتحقق من شروط كل برنامج من مصدره الرسمي." data-en="Explore cultural exchange programs and check their official eligibility requirements.">تعرّف على برامج التبادل الثقافي، وتحقق من شروط كل برنامج من مصدره الرسمي.</p>
+        <div class="card">
+          <h3 data-ar="البحث عن البرامج" data-en="Find Programs">البحث عن البرامج</h3>
+          <a href="https://exchanges.state.gov/" target="_blank" rel="noopener noreferrer">Exchange Programs</a>
+        </div>
+      </section>
+
+      <section class="page" id="documents">
+        <h2 data-ar="تجهيز ملف التقديم" data-en="Application Checklist">تجهيز ملف التقديم</h2>
+        <p data-ar="استخدم القائمة لتتابع استعدادك. تختلف المتطلبات حسب المنحة والجامعة." data-en="Use this checklist to track your preparation. Requirements vary by scholarship and university.">استخدم القائمة لتتابع استعدادك. تختلف المتطلبات حسب المنحة والجامعة.</p>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> <span data-ar="جواز سفر ساري المفعول" data-en="Valid passport">جواز سفر ساري المفعول</span></label></li>
+          <li><label><input type="checkbox"> <span data-ar="الشهادة وكشف الدرجات" data-en="Certificate and transcript">الشهادة وكشف الدرجات</span></label></li>
+          <li><label><input type="checkbox"> <span data-ar="خطاب الدافع" data-en="Motivation letter">خطاب الدافع</span></label></li>
+          <li><label><input type="checkbox"> <span data-ar="شهادات اللغة والدورات" data-en="Language and course certificates">شهادات اللغة والدورات</span></label></li>
+          <li><label><input type="checkbox"> <span data-ar="خطابات التوصية إن طُلبت" data-en="Recommendation letters if required">خطابات التوصية إن طُلبت</span></label></li>
+          <li><label><input type="checkbox"> <span data-ar="مراجعة الشروط والمواعيد الرسمية" data-en="Review official requirements and deadlines">مراجعة الشروط والمواعيد الرسمية</span></label></li>
+        </ul>
+      </section>
+
+      <section class="page" id="english">
+        <h2 data-ar="تعلم الإنجليزية" data-en="Learn English">تعلم الإنجليزية</h2>
+        <p data-ar="طوّر القراءة والاستماع والمحادثة والكتابة بالتدريب المستمر." data-en="Develop reading, listening, speaking, and writing through regular practice.">طوّر القراءة والاستماع والمحادثة والكتابة بالتدريب المستمر.</p>
+        <ul>
+          <li><a href="https://www.zamericanenglish.net/" target="_blank" rel="noopener noreferrer">ZAmericanEnglish</a></li>
+          <li><a href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener noreferrer">BBC Learning English</a></li>
+          <li><a href="https://www.efset.org/" target="_blank" rel="noopener noreferrer">EF SET — اختبار مستوى اللغة</a></li>
+        </ul>
+      </section>
+
+      <section class="page" id="math">
+        <h2 data-ar="تعلم الرياضيات" data-en="Learn Mathematics">تعلم الرياضيات</h2>
+        <p data-ar="راجع المفاهيم وتدرّب على حل المسائل تدريجيًا." data-en="Review concepts and practice solving problems step by step.">راجع المفاهيم وتدرّب على حل المسائل تدريجيًا.</p>
+        <a href="https://www.khanacademy.org/math" target="_blank" rel="noopener noreferrer">Khan Academy — Mathematics</a>
+      </section>
+
+      <section class="page" id="teachers">
+        <h2 data-ar="مدرسو الرياضيات" data-en="Math Teachers">مدرسو الرياضيات</h2>
+        <p data-ar="أضف هنا روابط المدرسين والقنوات التي تعتمد عليها، حتى يصل إليها الطلاب بسهولة." data-en="Add the teacher and channel links you use so students can find them easily.">أضف هنا روابط المدرسين والقنوات التي تعتمد عليها، حتى يصل إليها الطلاب بسهولة.</p>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </section>
+
+      <section class="page" id="courses">
+        <h2 data-ar="الدورات والشهادات" data-en="Courses & Certificates">الدورات والشهادات</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Edraak</h3>
+            <p data-ar="دورات عربية في مجالات متنوعة." data-en="Arabic courses in different fields.">دورات عربية في مجالات متنوعة.</p>
+            <a href="https://www.edraak.org/" target="_blank" rel="noopener noreferrer">استكشف الدورات</a>
+          </article>
+          <article class="card">
+            <h3>FutureLearn</h3>
+            <p data-ar="دورات عبر الإنترنت." data-en="Online courses.">دورات عبر الإنترنت.</p>
+            <a href="https://www.futurelearn.com/" target="_blank" rel="noopener noreferrer">استكشف الدورات</a>
+          </article>
+          <article class="card">
+            <h3>OpenLearn</h3>
+            <p data-ar="مواد تعليمية مجانية." data-en="Free learning resources.">مواد تعليمية مجانية.</p>
+            <a href="https://www.open.edu/openlearn/" target="_blank" rel="noopener noreferrer">ابدأ التعلم</a>
+          </article>
+          <article class="card">
+            <h3>Microsoft Learn</h3>
+            <p data-ar="تعلّم التقنية والبرمجة." data-en="Learn technology and programming.">تعلّم التقنية والبرمجة.</p>
+            <a href="https://learn.microsoft.com/training/" target="_blank" rel="noopener noreferrer">ابدأ التعلم</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="exams">
+        <h2 data-ar="نماذج الاختبارات" data-en="Practice Exams">نماذج الاختبارات</h2>
+        <p data-ar="تحقق من متطلبات الاختبارات المطلوبة للبرنامج الذي تنوي التقديم إليه." data-en="Check which exams are required by the program you plan to apply to.">تحقق من متطلبات الاختبارات المطلوبة للبرنامج الذي تنوي التقديم إليه.</p>
+        <ul>
+          <li><a href="https://satsuite.collegeboard.org/sat" target="_blank" rel="noopener noreferrer">SAT — الموقع الرسمي</a></li>
+          <li><a href="https://www.csca.cn/" target="_blank" rel="noopener noreferrer">CSCA — تحقق من متطلبات الاختبار</a></li>
+        </ul>
+      </section>
+
+      <section class="page" id="yemenExams">
+        <h2 data-ar="اختبارات الثانوية اليمنية" data-en="Yemen High School Exams">اختبارات الثانوية اليمنية</h2>
+        <p data-ar="يمكن إضافة نماذج الأعوام السابقة ومراجعات المواد هنا بعد التحقق من الروابط." data-en="Past exam papers and subject reviews can be added here after verifying the links.">يمكن إضافة نماذج الأعوام السابقة ومراجعات المواد هنا بعد التحقق من الروابط.</p>
+      </section>
+
+      <section class="page" id="askGroups">
+        <h2 data-ar="مجموعات ASK التعليمية" data-en="ASK Educational Groups">مجموعات ASK التعليمية</h2>
+        <p data-ar="قسم مخصص لروابط مجموعات المواد الدراسية والمناقشة مع المدرسين." data-en="A section for subject-specific study groups and discussions with teachers.">قسم مخصص لروابط مجموعات المواد الدراسية والمناقشة مع المدرسين.</p>
+      </section>
+
+      <section class="page" id="scholarshipGroups">
+        <h2 data-ar="قنوات ومجموعات المنح" data-en="Scholarship Channels & Groups">قنوات ومجموعات المنح</h2>
+        <p data-ar="تابع النقاشات والإعلانات، وتحقق من صحة أي إعلان من الموقع الرسمي للمنحة." data-en="Follow discussions and announcements, and verify each opportunity through its official website.">تابع النقاشات والإعلانات، وتحقق من صحة أي إعلان من الموقع الرسمي للمنحة.</p>
+        <a href="https://t.me/Molim_Ye" target="_blank" rel="noopener noreferrer">قناة Molim Ye على Telegram</a>
+      </section>
+
+      <section class="page" id="goals">
+        <h2 data-ar="أهدافي وتقدمي الدراسي" data-en="My Goals & Study Progress">أهدافي وتقدمي الدراسي</h2>
+
+        <div class="card">
+          <h3 data-ar="التقدم الأسبوعي" data-en="Weekly Progress">التقدم الأسبوعي</h3>
+          <label for="studyHours" data-ar="ساعات الدراسة المنجزة" data-en="Study hours completed">ساعات الدراسة المنجزة</label>
+          <input id="studyHours" type="number" min="0" max="168" step="0.5">
+          <label for="weeklyGoal" data-ar="هدف الساعات الأسبوعي" data-en="Weekly hours goal">هدف الساعات الأسبوعي</label>
+          <input id="weeklyGoal" type="number" min="1" max="168" step="0.5">
+          <label for="restDay" data-ar="يوم الراحة" data-en="Rest day">يوم الراحة</label>
           <select id="restDay">
-            <option value="">اختر يوم الراحة</option>
             <option value="Saturday">السبت</option>
             <option value="Sunday">الأحد</option>
             <option value="Monday">الاثنين</option>
@@ -116,183 +217,35 @@
             <option value="Thursday">الخميس</option>
             <option value="Friday">الجمعة</option>
           </select>
-          <button id="saveProgress" class="primary-btn" type="button" data-ar="حفظ التقدم" data-en="Save Progress">حفظ التقدم</button>
-          <p id="progressResult" class="feedback" aria-live="polite">أدخل بياناتك ثم احفظها.</p>
+          <button id="saveProgress" type="button" data-ar="حفظ التقدم" data-en="Save Progress">حفظ التقدم</button>
+          <p id="progressResult" aria-live="polite"></p>
         </div>
-      </section>
 
-      <section id="scholarships" class="page">
-        <h2 data-ar="المنح الدراسية" data-en="Scholarships">المنح الدراسية</h2>
-        <p data-ar="ابدأ بالاطلاع على الشروط والمواعيد من المواقع الرسمية."
-           data-en="Start by checking requirements and deadlines on official websites.">
-          ابدأ بالاطلاع على الشروط والمواعيد من المواقع الرسمية.
-        </p>
-        <div class="cards">
-          <article class="resource-card"><h3>Stipendium Hungaricum</h3><p data-ar="المنحة الحكومية المجرية." data-en="Hungarian government scholarship.">المنحة الحكومية المجرية.</p><a href="https://stipendiumhungaricum.hu/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></article>
-          <article class="resource-card"><h3>Campus China</h3><p data-ar="بوابة معلومات المنح الدراسية في الصين." data-en="Chinese scholarship information portal.">بوابة معلومات المنح الدراسية في الصين.</p><a href="https://www.campuschina.org/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></article>
-          <article class="resource-card"><h3>ScholarshipPortal</h3><p data-ar="البحث عن فرص دراسية حول العالم." data-en="Search study opportunities worldwide.">البحث عن فرص دراسية حول العالم.</p><a href="https://www.scholarshipportal.com/" target="_blank" rel="noopener noreferrer">استكشف الفرص</a></article>
-          <article class="resource-card"><h3>مُلم اليمن</h3><p data-ar="مجتمع لمناقشة فرص المنح." data-en="A community for discussing scholarships.">مجتمع لمناقشة فرص المنح.</p><a href="https://www.molim.team/scholarships" target="_blank" rel="noopener noreferrer">الموقع</a></article>
-        </div>
-      </section>
-
-      <section id="exchange" class="page">
-        <h2 data-ar="التبادل الثقافي" data-en="Cultural Exchange">التبادل الثقافي</h2>
-        <div class="panel">
-          <p data-ar="فرص التبادل الثقافي قد تتيح لك الدراسة أو التدريب والتعرف إلى ثقافات أخرى. تحقق من الأهلية والعمر والمواعيد والتمويل لكل فرصة."
-             data-en="Cultural exchange programs may offer study, training, and opportunities to discover other cultures. Check eligibility, age requirements, deadlines, and funding for each program.">
-            فرص التبادل الثقافي قد تتيح لك الدراسة أو التدريب والتعرف إلى ثقافات أخرى. تحقق من الأهلية والعمر والمواعيد والتمويل لكل فرصة.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="resource-card"><h3>مجموعات التبادل الثقافي</h3><p data-ar="مجتمع لمشاركة المعلومات والخبرات." data-en="A community for sharing information and experiences.">مجتمع لمشاركة المعلومات والخبرات.</p><a href="https://t.me/UUU202UUU" target="_blank" rel="noopener noreferrer">فتح المجموعة</a></article>
-          <article class="resource-card"><h3>Dal — Generation Z</h3><p data-ar="مجتمع طلابي للمعلومات والفرص." data-en="A student community for information and opportunities.">مجتمع طلابي للمعلومات والفرص.</p><a href="https://t.me/Dal_Generation_Z" target="_blank" rel="noopener noreferrer">فتح المجموعة</a></article>
-        </div>
-      </section>
-
-      <section id="documents" class="page">
-        <h2 data-ar="ملف التقديم" data-en="Application Documents">ملف التقديم</h2>
-        <p data-ar="ضع علامة أمام كل وثيقة بعد تجهيزها. تختلف المتطلبات حسب المنحة."
-           data-en="Check each document once prepared. Requirements vary by scholarship.">
-          ضع علامة أمام كل وثيقة بعد تجهيزها. تختلف المتطلبات حسب المنحة.
-        </p>
-        <div class="panel checklist">
-          <label><input type="checkbox"> شهادة الثانوية العامة</label>
-          <label><input type="checkbox"> كشف الدرجات</label>
-          <label><input type="checkbox"> جواز سفر ساري المفعول</label>
-          <label><input type="checkbox"> السيرة الذاتية</label>
-          <label><input type="checkbox"> رسالة الدافع</label>
-          <label><input type="checkbox"> شهادة اللغة الإنجليزية إن طُلبت</label>
-          <label><input type="checkbox"> خطابات التوصية إن طُلبت</label>
-          <label><input type="checkbox"> صور شخصية والوثائق الإضافية</label>
-        </div>
-      </section>
-
-      <section id="english" class="page">
-        <h2 data-ar="تعلم الإنجليزية" data-en="Learn English">تعلم الإنجليزية</h2>
-        <div class="cards">
-          <article class="resource-card"><h3>ZAmericanEnglish</h3><p data-ar="مسار لتعلم الإنجليزية باللغة العربية." data-en="English learning lessons explained in Arabic.">مسار لتعلم الإنجليزية باللغة العربية.</p><a href="https://www.youtube.com/@zamericanenglish" target="_blank" rel="noopener noreferrer">فتح القناة</a></article>
-          <article class="resource-card"><h3>BBC Learning English</h3><p data-ar="تدريب على الاستماع والمفردات والقواعد." data-en="Practice listening, vocabulary, and grammar.">تدريب على الاستماع والمفردات والقواعد.</p><a href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener noreferrer">ابدأ التعلم</a></article>
-          <article class="resource-card"><h3>English with Lucy</h3><p data-ar="دروس في النطق والمفردات." data-en="Lessons in pronunciation and vocabulary.">دروس في النطق والمفردات.</p><a href="https://www.youtube.com/results?search_query=English+with+Lucy+official" target="_blank" rel="noopener noreferrer">البحث عن الدروس</a></article>
-          <article class="resource-card"><h3>EF SET</h3><p data-ar="اختبار لتقييم مستوى الإنجليزية." data-en="An English proficiency assessment.">اختبار لتقييم مستوى الإنجليزية.</p><a href="https://www.efset.org/" target="_blank" rel="noopener noreferrer">اختبر مستواك</a></article>
-        </div>
-      </section>
-
-      <section id="math" class="page">
-        <h2 data-ar="تعلم الرياضيات" data-en="Learn Mathematics">تعلم الرياضيات</h2>
-        <div class="cards">
-          <article class="resource-card"><h3>الأستاذ محمد الدوكري</h3><p data-ar="قناة لشرح الرياضيات." data-en="A channel explaining mathematics.">قناة لشرح الرياضيات.</p><a href="https://www.youtube.com/channel/UCgQXF1GXFkjoB6f5Ms8BGgQ" target="_blank" rel="noopener noreferrer">فتح القناة</a></article>
-          <article class="resource-card"><h3>البحث عن مسائل الرياضيات</h3><p data-ar="ابحث عن شرح لمسألة أو موضوع لم تفهمه." data-en="Find explanations for problems or topics you find difficult.">ابحث عن شرح لمسألة أو موضوع لم تفهمه.</p><a href="https://www.youtube.com/results?search_query=شرح+رياضيات+الثانوية+العامة+اليمن" target="_blank" rel="noopener noreferrer">البحث في يوتيوب</a></article>
-        </div>
-      </section>
-
-      <section id="teachers" class="page">
-        <h2 data-ar="مدرّسو الرياضيات" data-en="Math Teachers">مدرّسو الرياضيات</h2>
-        <p data-ar="قسم مخصص لقنوات المدرسين وروابطهم لمساعدتك عند مواجهة صعوبة في حل المسائل."
-           data-en="A dedicated section for teachers' channels and links to help when solving math problems.">
-          قسم مخصص لقنوات المدرسين وروابطهم لمساعدتك عند مواجهة صعوبة في حل المسائل.
-        </p>
-        <div class="panel">
-          <h3>الأستاذ محمد الدوكري</h3>
-          <a href="https://www.youtube.com/channel/UCgQXF1GXFkjoB6f5Ms8BGgQ" target="_blank" rel="noopener noreferrer">قناة يوتيوب</a>
-          <p data-ar="لم تُضف هنا بقية روابط المدرسين وقناة الرياضيات على تيليجرام لأن الروابط الأصلية غير متاحة في السياق الحالي، ولا نريد استبدالها بروابط غير مؤكدة."
-             data-en="The remaining teacher links and the mathematics Telegram channel are not included because the original links are not available in the current context.">
-            لم تُضف هنا بقية روابط المدرسين وقناة الرياضيات على تيليجرام لأن الروابط الأصلية غير متاحة في السياق الحالي، ولا نريد استبدالها بروابط غير مؤكدة.
-          </p>
-        </div>
-      </section>
-
-      <section id="courses" class="page">
-        <h2 data-ar="الدورات والشهادات" data-en="Courses & Certificates">الدورات والشهادات</h2>
-        <div class="cards">
-          <article class="resource-card"><h3>إدراك</h3><p data-ar="دورات عربية في مجالات متنوعة." data-en="Arabic courses across different subjects.">دورات عربية في مجالات متنوعة.</p><a href="https://www.edraak.org/" target="_blank" rel="noopener noreferrer">استكشف الدورات</a></article>
-          <article class="resource-card"><h3>FutureLearn</h3><p data-ar="دورات من مؤسسات تعليمية." data-en="Courses from educational institutions.">دورات من مؤسسات تعليمية.</p><a href="https://www.futurelearn.com/" target="_blank" rel="noopener noreferrer">استكشف الدورات</a></article>
-          <article class="resource-card"><h3>OpenLearn</h3><p data-ar="مواد تعليمية مجانية من الجامعة المفتوحة." data-en="Free learning resources from The Open University.">مواد تعليمية مجانية من الجامعة المفتوحة.</p><a href="https://www.open.edu/openlearn/" target="_blank" rel="noopener noreferrer">ابدأ التعلم</a></article>
-          <article class="resource-card"><h3>Microsoft Learn</h3><p data-ar="مسارات تقنية وبرمجية." data-en="Technical and programming learning paths.">مسارات تقنية وبرمجية.</p><a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreferrer">ابدأ التعلم</a></article>
-          <article class="resource-card"><h3>Coursera</h3><p data-ar="دورات أكاديمية ومهنية؛ تحقق من رسوم الشهادة." data-en="Academic and professional courses; check certificate fees.">دورات أكاديمية ومهنية؛ تحقق من رسوم الشهادة.</p><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">استكشف الدورات</a></article>
-        </div>
-      </section>
-
-      <section id="exams" class="page">
-        <h2 data-ar="نماذج الاختبارات" data-en="Practice Exams">نماذج الاختبارات</h2>
-        <div class="cards">
-          <article class="resource-card"><h3>CSCA</h3><p data-ar="الموقع الرسمي للاختبار ومواده التدريبية." data-en="Official exam website and practice resources.">الموقع الرسمي للاختبار ومواده التدريبية.</p><a href="https://csca.cn/home" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a><a href="https://csca.cn/testprep/examsv" target="_blank" rel="noopener noreferrer">مواد التدريب</a><a href="https://www.cscastart.com/practice" target="_blank" rel="noopener noreferrer">تدريب إضافي</a></article>
-          <article class="resource-card"><h3>SAT</h3><p data-ar="اختبارات تدريب رسمية من College Board." data-en="Official practice tests from College Board.">اختبارات تدريب رسمية من College Board.</p><a href="https://satsuite.collegeboard.org/practice/practice-tests" target="_blank" rel="noopener noreferrer">اختبارات التدريب</a><a href="https://satsuite.collegeboard.org/practice" target="_blank" rel="noopener noreferrer">موارد التدريب</a></article>
-        </div>
-      </section>
-
-      <section id="yemenExams" class="page">
-        <h2 data-ar="اختبارات الثانوية اليمنية" data-en="Yemeni High School Exams">اختبارات الثانوية اليمنية</h2>
-        <div class="panel">
-          <p data-ar="استخدم البحث للوصول إلى نماذج الأعوام السابقة، وتأكد من مصدر الملفات وصحة الإجابات قبل الاعتماد عليها."
-             data-en="Use search to find past papers, and verify the source and answers before relying on them.">
-            استخدم البحث للوصول إلى نماذج الأعوام السابقة، وتأكد من مصدر الملفات وصحة الإجابات قبل الاعتماد عليها.
-          </p>
-          <a href="https://www.google.com/search?q=نماذج+اختبارات+الثانوية+العامة+اليمن+pdf" target="_blank" rel="noopener noreferrer">البحث عن نماذج الثانوية اليمنية</a>
-        </div>
-      </section>
-
-      <section id="askGroups" class="page">
-        <h2 data-ar="مجموعات ASK التعليمية" data-en="ASK Educational Groups">مجموعات ASK التعليمية</h2>
-        <p data-ar="مجموعات مستقلة حسب المواد، وفيها مساحة لمناقشة الأسئلة مع المدرسين والطلاب."
-           data-en="Separate subject-based groups where students can discuss questions with teachers and peers.">
-          مجموعات مستقلة حسب المواد، وفيها مساحة لمناقشة الأسئلة مع المدرسين والطلاب.
-        </p>
-        <div class="resource-card">
-          <h3>ASK التعليمية</h3>
-          <a href="https://t.me/addlist/PC7fBi7BUUoyNWQ0" target="_blank" rel="noopener noreferrer">فتح قائمة مجموعات المواد</a>
-        </div>
-      </section>
-
-      <section id="scholarshipGroups" class="page">
-        <h2 data-ar="مجموعات نقاش المنح" data-en="Scholarship Discussion Groups">مجموعات نقاش المنح</h2>
-        <div class="cards">
-          <article class="resource-card"><h3>مُلم اليمن</h3><a href="https://t.me/Molim_Ye" target="_blank" rel="noopener noreferrer">فتح المجموعة</a></article>
-          <article class="resource-card"><h3>Dal — Generation Z</h3><a href="https://t.me/Dal_Generation_Z" target="_blank" rel="noopener noreferrer">فتح المجموعة</a></article>
-          <article class="resource-card"><h3>التبادل الثقافي</h3><a href="https://t.me/UUU202UUU" target="_blank" rel="noopener noreferrer">فتح المجموعة</a></article>
-          <article class="resource-card"><h3>مُلم — فرص المنح</h3><a href="https://www.molim.team/scholarships" target="_blank" rel="noopener noreferrer">فتح موقع المنح</a></article>
-        </div>
-      </section>
-
-      <section id="goals" class="page">
-        <h2 data-ar="أهدافي وتقدمي" data-en="Goals & Progress">أهدافي وتقدمي</h2>
-        <div class="panel">
-          <label for="goalInput" data-ar="هدفي القادم" data-en="My Next Goal">هدفي القادم</label>
-          <input id="goalInput" type="text" maxlength="180" placeholder="مثال: إنهاء دورة بايثون">
-          <label for="goalDate" data-ar="الموعد المستهدف" data-en="Target Date">الموعد المستهدف</label>
+        <div class="card">
+          <h3 data-ar="هدفي القادم" data-en="My Next Goal">هدفي القادم</h3>
+          <label for="goalInput" data-ar="اكتب هدفك" data-en="Enter your goal">اكتب هدفك</label>
+          <input id="goalInput" type="text" placeholder="مثال: إنهاء دورة بايثون">
+          <label for="goalDate" data-ar="الموعد المستهدف" data-en="Target date">الموعد المستهدف</label>
           <input id="goalDate" type="date">
-          <button id="saveGoal" class="primary-btn" type="button" data-ar="حفظ الهدف" data-en="Save Goal">حفظ الهدف</button>
-          <p id="goalResult" class="feedback" aria-live="polite">لم تحفظ هدفًا بعد.</p>
-        </div>
-        <div class="panel">
-          <h3 data-ar="التوازن مهم" data-en="Balance Matters">التوازن مهم</h3>
-          <p data-ar="اجعل لك وقتًا للدراسة ووقتًا للراحة والنوم والعبادة والأسرة. الاستمرارية أهم من الضغط على نفسك."
-             data-en="Make time for study, rest, sleep, worship, and family. Consistency matters more than overloading yourself.">
-            اجعل لك وقتًا للدراسة ووقتًا للراحة والنوم والعبادة والأسرة. الاستمرارية أهم من الضغط على نفسك.
-          </p>
+          <button id="saveGoal" type="button" data-ar="حفظ الهدف" data-en="Save Goal">حفظ الهدف</button>
+          <p id="goalResult" aria-live="polite"></p>
         </div>
       </section>
 
-      <section id="about" class="page">
+      <section class="page" id="about">
         <h2 data-ar="عن Student Path" data-en="About Student Path">عن Student Path</h2>
-        <div class="panel">
-          <p data-ar="طريق الطالب مشروع يهدف إلى تنظيم الموارد التعليمية وروابط المنح والاختبارات في واجهة واحدة سهلة الاستخدام. يمكن للطالب الاستفادة من الروابط دون إنشاء حساب في هذه المرحلة."
-             data-en="Student Path organizes educational resources, scholarship links, and exam resources in one easy-to-use interface. Students can browse resources without an account at this stage.">
-            طريق الطالب مشروع يهدف إلى تنظيم الموارد التعليمية وروابط المنح والاختبارات في واجهة واحدة سهلة الاستخدام. يمكن للطالب الاستفادة من الروابط دون إنشاء حساب في هذه المرحلة.
-          </p>
-          <h3 data-ar="المؤسس" data-en="Founder">المؤسس</h3>
-          <p class="founder">HASAN MUAAFA HASAN MUAAFA</p>
-          <p data-ar="إنشاء الحسابات والمزامنة بين الأجهزة يحتاج إلى مرحلة تطوير لاحقة تتضمن نظام تسجيل دخول وقاعدة بيانات."
-             data-en="Accounts and cross-device syncing require a later development phase with authentication and a database.">
-            إنشاء الحسابات والمزامنة بين الأجهزة يحتاج إلى مرحلة تطوير لاحقة تتضمن نظام تسجيل دخول وقاعدة بيانات.
-          </p>
-          <a href="https://t.me/AL_AIN_FC_00" target="_blank" rel="noopener noreferrer">التواصل مع المؤسس عبر تيليجرام</a>
-        </div>
+        <p data-ar="Student Path مشروع تعليمي يهدف إلى جمع الموارد المفيدة للطلاب في مكان واحد، ومساعدتهم على تنظيم الدراسة والاستعداد للفرص الأكاديمية." data-en="Student Path is an educational project that brings useful resources together and helps students organize their studies and prepare for academic opportunities.">Student Path مشروع تعليمي يهدف إلى جمع الموارد المفيدة للطلاب في مكان واحد، ومساعدتهم على تنظيم الدراسة والاستعداد للفرص الأكاديمية.</p>
       </section>
 
-      <footer class="footer">
-        <p>Student Path · HASAN MUAAFA HASAN MUAAFA</p>
-        <p data-ar="التعلم خطوة بخطوة يصنع الفرق." data-en="Step-by-step learning makes a difference.">التعلم خطوة بخطوة يصنع الفرق.</p>
-      </footer>
     </main>
   </div>
+
+  <footer>
+    <p>Student Path © 2026</p>
+    <p data-ar="خطوة صغيرة اليوم تصنع فرقًا غدًا." data-en="A small step today makes a difference tomorrow.">خطوة صغيرة اليوم تصنع فرقًا غدًا.</p>
+  </footer>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
